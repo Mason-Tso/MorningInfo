@@ -101,19 +101,29 @@ per-ticker company news and quotes; `FMP_API_KEY` and `TIINGO_API_KEY` are reser
 future use. To use them in the cloud routine, prefix the fetch command in the routine prompt
 with `FINNHUB_API_KEY=... python3 scripts/fetch_briefing_data.py`.
 
-## If the cloud sandbox has no outbound network
+## Network access in the cloud sandbox (important)
 
-The routine's sandbox may block direct HTTP from Bash (every snapshot line then reads
-"unavailable" and every news section "nothing fetched"). Do not debug the proxy. Run
+The routine runs in the "Default" claude.ai/code environment. Unless that environment's network
+access is set to allow outbound traffic, the egress proxy blocks BOTH the fetch script (Bash) AND
+WebFetch. Only WebSearch works, and it returns snippets rather than pages, so the briefing
+quality drops. The fix is a one-time account setting: open the environment at
+https://claude.ai/code (Settings > Environments > Default) and set network access to allow
+outbound traffic (or allowlist at least: query1.finance.yahoo.com, fred.stlouisfed.org,
+api.coingecko.com, news.google.com, feeds.content.dowjones.io, www.cnbc.com,
+www.americanbanker.com, www.coindesk.com, www.theblock.co, www.finextra.com, techcrunch.com).
+
+Symptoms of the block: every snapshot line reads "unavailable" and every news section
+"nothing fetched"; WebFetch returns EGRESS_BLOCKED. When that happens the routine should not
+debug the proxy. It should run
 
 ```
 python3 scripts/fetch_briefing_data.py --urls
 ```
 
-which needs no network and prints every URL the script would have fetched, grouped by purpose
-(Yahoo chart JSON for quotes, FRED CSV for yields, CoinGecko JSON for crypto, RSS feeds by
-sector). Pull those with WebFetch, which goes through a different path, and use WebSearch for
-anything the feeds miss. Then write the briefing as normal.
+(needs no network; prints every URL the script would fetch, grouped) and try WebFetch on a few of
+them once. If WebFetch is blocked too, fall back to WebSearch with targeted queries (index closes,
+yields, oil, bank names, company names, "fintech raises") and write the best briefing possible,
+noting in the MARKET SNAPSHOT which numbers are from search snippets.
 
 ## Running locally
 
