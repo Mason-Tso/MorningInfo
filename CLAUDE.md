@@ -38,7 +38,7 @@ learn something every day. It must never assume knowledge; every term gets expla
 ## Briefing format (plain-text email, 5-minute news brief)
 
 Style model: a morning news brief written for a smart beginner. Read time about 5 minutes
-(900-1,200 words, 15-22 items). Each item is one short paragraph of 2-3 plain-English sentences:
+(1,000-1,300 words, 17-24 items). Each item is one short paragraph of 2-3 plain-English sentences:
 what happened, why it matters, and, only when it truly matters, ONE number. Every item ENDS with
 a source tag in caps (WSJ, BBG, FT, Reuters, CNBC, NYT, Axios, CoinDesk, The Block, TechCrunch,
 PitchBook, or the company). Plain text only: no markdown headers, tables or bold; CAPS section
@@ -82,14 +82,36 @@ Sections, in this order:
    words. Example: "Stocks fell for a fourth day and bond yields hit their highest since 2023,
    all because oil spiked on the Iran conflict and an inflation report ran hot. The dollar
    weakened and gold stayed near records. Bitcoin drifted lower with everything else."
-2. **BIG PICTURE** (4-6 items). Geopolitics, the Fed and other central banks, inflation and
-   jobs data, oil, major earnings, big sell-side calls (name the bank and person when known).
-3. **BANKS & SALES/TRADING** (3-5 items, priority). Citi, JPMorgan, Goldman, Morgan Stanley,
-   BofA, Barclays, Deutsche, UBS: trading revenue, desk news, hires and exits, strategy calls,
-   regulation, AI on the floor, layoffs. Name the desk it touches and gloss it.
-4. **CRYPTO & DIGITAL ASSETS** (3-5 items). Bank moves first (tokenized deposits, stablecoins,
-   custody), then Ripple, Galaxy, Pantera, Coinbase, Robinhood, Securitize, Centrifuge, Plaid,
-   Stripe, Hyperliquid, Circle, Kraken and other fintech/crypto startups; then policy.
+2. **BIG PICTURE** (3-5 items). Keep this the simplest section in the email. Each item is
+   1-2 short sentences: first sentence says what happened in everyday words, second says why
+   it matters to a normal person or to markets. At most ONE rounded number per item. No stacked
+   figures (never "rose 0.4%, pushing the rate to 5.4% from 4.8%"; write "wholesale prices rose
+   faster than expected"). Covers geopolitics, the Fed and other central banks, inflation and
+   jobs data, oil, and anything huge in stocks. Example:
+     Prices that businesses pay each other rose faster than expected last month, mostly because
+     of oil. That makes it more likely the Fed raises interest rates next week instead of
+     cutting them. CNBC
+3. **BANKS & SALES/TRADING** (3-5 items, priority). Bank-specific: Citi, JPMorgan, Goldman,
+   Morgan Stanley, BofA, Barclays, Deutsche, UBS. Trading revenue, desk news, hires and exits,
+   strategy calls from their research teams, regulation, AI on the floor, layoffs. Name the desk
+   it touches and gloss it. Then END the section with:
+     IF YOU WERE ON A TRADING DESK TODAY: 3-4 short sentences in simple terms on what a trader
+     would take away from today's news. Which desks are busy and why (rates, FX, commodities,
+     equities, credit), what clients are likely calling about, and what could move next. Write
+     it like a friendly senior trader explaining the day to an intern. Example:
+       Today is a busy day for the rates desk, because hot inflation data means clients are
+       rushing to reprice where interest rates are going. The commodities desk is busy too,
+       with airlines and shippers calling to hedge against even higher oil. Stock traders are
+       quieter but nervous. The thing everyone is watching next is tomorrow's inflation report.
+4. **CRYPTO & DIGITAL ASSETS** (5-7 items). Order: bank moves first (tokenized deposits,
+   stablecoins, custody, crypto trading at Citi, JPMorgan, Goldman, Morgan Stanley, BofA); then
+   the named companies (Ripple, Galaxy, Pantera, Coinbase, Robinhood, Securitize, Centrifuge,
+   Plaid, Stripe, Hyperliquid, Circle, Kraken) and other fintech/crypto startups; then policy
+   (GENIUS Act, SEC, CFTC, Treasury); then one short item on where bitcoin and ether are and why.
+   Search each named company; include every one that has real news in the last 48 hours. Say
+   what each company does in a few words the first time. Then END the section with:
+     WHAT THIS MEANS: 2-3 simple sentences tying the items together (for example: banks and
+     crypto firms are converging on stablecoins, and here is who is winning and why).
 5. **PRIVATE CREDIT** (1-2 items). Brief.
 6. **GROWTH EQUITY, VC & FINTECH FUNDING** (3-4 items). Insight Partners and General Atlantic
    whenever they appear; big rounds and fund closes; say what the company does in plain words.
