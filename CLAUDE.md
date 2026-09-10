@@ -55,6 +55,12 @@ Easy to understand is the top rule:
   expensive for everyone", "which is bad for bank trading desks because...").
 - When a term a beginner would not know appears, gloss it in a short bracket the first time,
   e.g. "FICC [the desk that trades bonds, currencies and commodities]".
+- No stock prices to the cent ("shares closed at $138.14"). Say "shares rose" or "shares are
+  near a record" instead, unless the price itself is the story.
+- Freshness: the brief is about the last 24-48 hours. If an item is older than about three days
+  (for example last quarter's earnings or a deal announced weeks ago), either drop it or say
+  plainly when it happened ("back in July, JPMorgan reported..."). Never present old news as
+  "just" happened, because Mason may repeat it in a coffee chat.
 - No intros, no filler, no lectures. Numbers and facts must come from fetched data or a named
   source; never invent them.
 
