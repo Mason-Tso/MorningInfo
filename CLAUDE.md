@@ -35,63 +35,67 @@ learn something every day. It must never assume knowledge; every term gets expla
 - **Growth equity & VC:** Insight Partners, General Atlantic, plus a16z, Sequoia, Thrive, TCV,
   Vista, Blackstone Growth, Tiger, Coatue. Fintech funding rounds, fund closes, exits, IPOs.
 
-## Briefing format (plain-text email, wire-style news digest)
+## Briefing format (plain-text email, 5-minute news brief)
 
-Style model: a trading-desk morning note. Dense, factual, news-first. Each item is a short
-paragraph of 1-3 sentences that states what happened, the key numbers, and why it matters,
-and ENDS with a source tag in caps (WSJ, BBG, FT, Reuters, CNBC, NYT, Axios, CoinDesk, The Block,
-TechCrunch, PitchBook, company press release, etc.). No headline-only bullets, no filler, no
-"in today's briefing" intros. Plain text only: no markdown headers, tables or bold; CAPS section
-labels; items separated by a blank line. Target 1,200-1,800 words, 25-40 items.
+Style model: a morning news brief written for a smart beginner. Read time about 5 minutes
+(900-1,200 words, 15-22 items). Each item is one short paragraph of 2-3 plain-English sentences:
+what happened, why it matters, and, only when it truly matters, ONE number. Every item ENDS with
+a source tag in caps (WSJ, BBG, FT, Reuters, CNBC, NYT, Axios, CoinDesk, The Block, TechCrunch,
+PitchBook, or the company). Plain text only: no markdown headers, tables or bold; CAPS section
+labels; items separated by a blank line.
+
+Easy to understand is the top rule:
+- Write like a news anchor explaining to a friend, not like a Bloomberg terminal. Full sentences,
+  no ticker soup, no abbreviations without a gloss.
+- Numbers are seasoning, not the meal. At most one or two figures per item, rounded ("oil is
+  above $100 a barrel", "the 10-year yield is near 5%", "a $100 million round"). Never a string
+  of levels and percentage moves. Skip basis points, intraday ticks and decimals unless the story
+  is literally about that number.
+- Always say why it matters in one clause a beginner can follow ("which makes borrowing more
+  expensive for everyone", "which is bad for bank trading desks because...").
+- When a term a beginner would not know appears, gloss it in a short bracket the first time,
+  e.g. "FICC [the desk that trades bonds, currencies and commodities]".
+- No intros, no filler, no lectures. Numbers and facts must come from fetched data or a named
+  source; never invent them.
 
 Example of the item style to match:
 
-  Within weeks of Iran's closure of the Strait of Hormuz, once Saudi Arabia's primary export
-  route for oil, the kingdom turned to Plan B: bypassing the strait by ramping up exports through
-  pipelines to the Red Sea. NYT
+  Oil is above $100 a barrel again after new US and Iranian strikes near the Strait of Hormuz,
+  the shipping lane a fifth of the world's oil passes through. Higher oil feeds inflation fears,
+  which is why bond yields jumped and stocks fell for a fourth day. CNBC
 
-  BofA total card spending (w/e Sept 5) +7.8% y/y (prev. +3.7%). BofA said the surge was likely
-  due to base effects from the shift in Labor Day timing and a rebound in gas prices. BofA
-
-Tailoring for Mason (new to markets): when an item uses a term a beginner would not know, add a
-short bracketed gloss the first time, e.g. "FICC [the fixed income, currencies and commodities
-trading division]" or "the 2s10s curve [gap between 2-year and 10-year yields]". Keep glosses
-to one short clause; do not turn items into lectures. Numbers must come from fetched data or a
-named source; never invent them.
+  A group of 21 big banks including Citi, Goldman and UBS said they will launch a shared dollar
+  stablecoin [a digital token always worth $1] by early 2027 for cross-border payments. It is the
+  banks' answer to Circle and other crypto firms taking payment business from them. Reuters
 
 Subject line: `MorningInfo — Thu Sep 10: <5-8 word headline of the day>`
 
 Sections, in this order:
 
-1. **TAPE** (one or two lines). S&P, Nasdaq, 10-year yield, 2-year yield, DXY, Brent or WTI,
-   gold, BTC, ETH with the latest level and move, and the as-of time. Example:
-   `TAPE (7:15am ET): S&P 7,604 -0.4% | Nasdaq 26,150 -0.4% | 10y 4.91% +6bp | 2y 4.53% | DXY 98.4 | Brent $105 | Gold $4,400 | BTC $77.9k | ETH $2,465`
-2. **MACRO & MARKETS** (8-12 items). What is moving markets: geopolitics, Fed/ECB/BoJ, data
-   prints (PPI, CPI, jobs), Treasury yields, oil, big earnings, sell-side calls (name the bank:
-   "GS FICC", "JPM's Kolanovic", "MS's Wilson"), notable stock moves.
-3. **BANKS & SALES/TRADING** (5-8 items, priority). Citi, JPMorgan, Goldman, Morgan Stanley,
-   BofA, Barclays, Deutsche, UBS: trading revenue and desk performance, hires/exits, strategy
-   notes from their research, regulation, AI on the floor, layoffs, comp, anything a desk is
-   talking about. Say which desk it touches when relevant.
-4. **CRYPTO & DIGITAL ASSETS** (6-10 items). Bank moves first (tokenized deposits, stablecoins,
+1. **THE MOOD** (2-3 sentences, no list). What markets did and the one reason why, in plain
+   words. Example: "Stocks fell for a fourth day and bond yields hit their highest since 2023,
+   all because oil spiked on the Iran conflict and an inflation report ran hot. The dollar
+   weakened and gold stayed near records. Bitcoin drifted lower with everything else."
+2. **BIG PICTURE** (4-6 items). Geopolitics, the Fed and other central banks, inflation and
+   jobs data, oil, major earnings, big sell-side calls (name the bank and person when known).
+3. **BANKS & SALES/TRADING** (3-5 items, priority). Citi, JPMorgan, Goldman, Morgan Stanley,
+   BofA, Barclays, Deutsche, UBS: trading revenue, desk news, hires and exits, strategy calls,
+   regulation, AI on the floor, layoffs. Name the desk it touches and gloss it.
+4. **CRYPTO & DIGITAL ASSETS** (3-5 items). Bank moves first (tokenized deposits, stablecoins,
    custody), then Ripple, Galaxy, Pantera, Coinbase, Robinhood, Securitize, Centrifuge, Plaid,
-   Stripe, Hyperliquid, Circle, Kraken/Payward and other fintech/crypto startups; then policy
-   (GENIUS Act, SEC, CFTC, Treasury). Prices and flows count as news.
-5. **PRIVATE CREDIT** (2-4 items, brief). Apollo, Blackstone, Ares, Blue Owl, KKR, fund
-   raises, redemptions, downgrades, bank partnerships.
-6. **GROWTH EQUITY, VC & FINTECH FUNDING** (5-8 items). Insight Partners and General Atlantic
-   whenever they appear; other big rounds, fund closes, exits, IPOs; fintech rounds with amount,
-   lead investor, valuation, what the company does.
-7. **REACH OUT TODAY** (exactly three, compact). One per line:
+   Stripe, Hyperliquid, Circle, Kraken and other fintech/crypto startups; then policy.
+5. **PRIVATE CREDIT** (1-2 items). Brief.
+6. **GROWTH EQUITY, VC & FINTECH FUNDING** (3-4 items). Insight Partners and General Atlantic
+   whenever they appear; big rounds and fund closes; say what the company does in plain words.
+7. **REACH OUT TODAY** (exactly three, one line each):
    `- <type of person: role + desk/team + firm> — <the news hook> — Ask: "<one natural question>"`
    At least one in bank S&T; spread the others across crypto/digital assets and growth/VC.
-8. **DECODER** (5-8 terms used above, one line each, plain English).
-9. **TAKE** (3-4 sentences, labelled opinion). Where one sector is heading and why, tied to
-   today's items.
+8. **LEARN ONE THING** (3-4 sentences). One concept from today's news explained from zero
+   with a concrete example. Do not repeat a concept from the last 10 briefings.
+9. **TAKE** (2-3 sentences, labelled opinion). Where one sector is heading and why.
 
-Do not pad. If a sector is quiet, write one item saying so and move on. Prefer items dated
-today or yesterday (Eastern time). Older items only if they are still driving the story and the
-item says so.
+Do not pad. If a sector is quiet, write one line saying so and move on. Prefer items dated
+today or yesterday (Eastern time).
 
 ## Project structure
 
