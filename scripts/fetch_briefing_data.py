@@ -14,6 +14,8 @@ Sections printed:
 Usage:
   python scripts/fetch_briefing_data.py            # full run
   python scripts/fetch_briefing_data.py --json     # machine-readable dump
+  python scripts/fetch_briefing_data.py --urls     # print every URL this script would fetch, grouped,
+                                                   # so an agent without outbound network can WebFetch them
 """
 
 import csv
@@ -433,7 +435,36 @@ def render(snapshot, stocks, company_news, sections):
     return "\n".join(L)
 
 
+def print_urls():
+    """Fallback for sandboxes with no outbound network: list the URLs so WebFetch can pull them."""
+    yahoo_ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
+    L = ["=== MORNINGINFO FETCH LIST (use WebFetch on each; JSON/CSV/RSS as noted) ==="]
+    L.append(f"(User-Agent for Yahoo if configurable: {yahoo_ua})\n")
+    L.append("--- QUOTES: Yahoo Finance chart JSON; read chart.result[0].meta.regularMarketPrice and chartPreviousClose ---")
+    for label, sym, unit, meaning in YAHOO_SYMBOLS:
+        L.append(f"  {label} [{unit}]: https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}?range=5d&interval=1d")
+    for name, t in STOCKS:
+        L.append(f"  {name} ({t}): https://query1.finance.yahoo.com/v8/finance/chart/{t}?range=5d&interval=1d")
+    L.append("\n--- RATES: FRED CSV; last two rows give today's value and the change in bp ---")
+    for label, series, meaning in FRED_SERIES:
+        L.append(f"  {label}: https://fred.stlouisfed.org/graph/fredgraph.csv?id={series}")
+    L.append("\n--- CRYPTO: CoinGecko JSON (usd, usd_24h_change, usd_market_cap) ---")
+    ids = ",".join(i for _, i in COINGECKO_IDS)
+    L.append(f"  https://api.coingecko.com/api/v3/simple/price?ids={ids}&vs_currencies=usd&include_24hr_change=true&include_market_cap=true")
+    L.append("\n--- NEWS: RSS feeds, keep items from the last 36 hours ---")
+    current = None
+    for section, label, url, limit in FEEDS:
+        if section != current:
+            L.append(f"  [{section}]")
+            current = section
+        L.append(f"    {label} (top {limit}): {url}")
+    sys.stdout.buffer.write("\n".join(L).encode("utf-8", errors="replace") + b"\n")
+
+
 def main():
+    if "--urls" in sys.argv:
+        print_urls()
+        return
     snapshot = market_snapshot()
     stocks = bank_stocks()
     company_news = {}

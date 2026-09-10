@@ -101,6 +101,20 @@ per-ticker company news and quotes; `FMP_API_KEY` and `TIINGO_API_KEY` are reser
 future use. To use them in the cloud routine, prefix the fetch command in the routine prompt
 with `FINNHUB_API_KEY=... python3 scripts/fetch_briefing_data.py`.
 
+## If the cloud sandbox has no outbound network
+
+The routine's sandbox may block direct HTTP from Bash (every snapshot line then reads
+"unavailable" and every news section "nothing fetched"). Do not debug the proxy. Run
+
+```
+python3 scripts/fetch_briefing_data.py --urls
+```
+
+which needs no network and prints every URL the script would have fetched, grouped by purpose
+(Yahoo chart JSON for quotes, FRED CSV for yields, CoinGecko JSON for crypto, RSS feeds by
+sector). Pull those with WebFetch, which goes through a different path, and use WebSearch for
+anything the feeds miss. Then write the briefing as normal.
+
 ## Running locally
 
 ```
