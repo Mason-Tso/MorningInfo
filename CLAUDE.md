@@ -32,13 +32,15 @@ learn something every day. It must never assume knowledge; every term gets expla
   tokenized deposits, stablecoins, custody, trading), then Ripple, Galaxy Digital, Pantera
   Capital, Coinbase, Robinhood, Securitize, Centrifuge, Plaid, Stripe, Hyperliquid, Circle,
   Kraken/Payward, and other fintech/crypto startups. Policy: GENIUS Act, SEC, CFTC, Treasury.
-- **Growth equity & VC:** Insight Partners, General Atlantic, plus a16z, Sequoia, Thrive, TCV,
-  Vista, Blackstone Growth, Tiger, Coatue. Fintech funding rounds, fund closes, exits, IPOs.
+- **Growth equity & VC (second priority, right after S&T):** Insight Partners, General Atlantic,
+  plus a16z, Sequoia, Thrive, TCV, Vista, Blackstone Growth, Tiger, Coatue, ICONIQ, Accel,
+  Lightspeed, Index, Bessemer, Summit, TA, Warburg Pincus. Growth rounds, fund closes,
+  secondaries, exits, IPOs, fintech funding.
 
 ## Briefing format (plain-text email, 5-minute news brief)
 
-Style model: a morning news brief written for a smart beginner. Read time about 5 minutes
-(1,000-1,300 words, 17-24 items). Each item is one short paragraph of 2-3 plain-English sentences:
+Style model: a morning news brief written for a smart beginner. Read time about 6 minutes
+(1,150-1,450 words, 19-26 items). Each item is one short paragraph of 2-3 plain-English sentences:
 what happened, why it matters, and, only when it truly matters, ONE number. Every item ENDS with
 a source tag in caps (WSJ, BBG, FT, Reuters, CNBC, NYT, Axios, CoinDesk, The Block, TechCrunch,
 PitchBook, or the company). Plain text only: no markdown headers, tables or bold; CAPS section
@@ -103,7 +105,44 @@ Sections, in this order:
        rushing to reprice where interest rates are going. The commodities desk is busy too,
        with airlines and shippers calling to hedge against even higher oil. Stock traders are
        quieter but nervous. The thing everyone is watching next is tomorrow's inflation report.
-4. **CRYPTO & DIGITAL ASSETS** (5-7 items). Order: bank moves first (tokenized deposits,
+4. **GROWTH EQUITY & VC** (4-6 items, second priority, more detailed than other sections).
+   Growth equity [investing in companies that already make real revenue and are growing fast,
+   usually buying a minority stake rather than the whole company] is the focus; big VC rounds
+   count too. Cast a wide net so there is always real news: Insight Partners, General Atlantic,
+   a16z, Sequoia, Thrive, TCV, Vista, Blackstone Growth, Tiger, Coatue, ICONIQ, Accel,
+   Lightspeed, Index, Bessemer, Summit, TA Associates, Warburg Pincus, KKR and Carlyle growth
+   funds. Look for: rounds of roughly $50 million or more (Series C and later), new fund closes,
+   secondary sales and tender offers, IPO filings and debuts of VC-backed companies, big exits and
+   acquisitions, and fintech rounds of any size that are notable. Each item is 2-4 sentences:
+     - the company and what it does, in plain words;
+     - how much it raised, who led the round, and the valuation if reported (money numbers are
+       allowed here because they ARE the story, but round them);
+     - why the investor likes it: the thesis in one sentence (fast revenue growth, winning a big
+       market, AI tailwind, profitable, etc.);
+     - why it matters beyond the company (what it says about the market, who else it affects).
+   Example of the item style (illustrative only, not a real deal):
+     A corporate-card and expense-software startup raised $500 million led by a well-known
+     growth fund at a valuation of about $20 billion. Investors are paying up because its revenue
+     is growing fast while most fintechs have slowed, and it keeps adding products businesses
+     pay for. It is a sign growth investors will still write huge checks for fintechs that show
+     real revenue. Bloomberg
+   Do NOT pad with "Insight Partners / General Atlantic were quiet this week" items. If they
+   have no news in the last ~3 days, leave them out entirely and cover other firms instead.
+   Then END the section with:
+     GROWTH EQUITY 101: 4-5 plain sentences teaching one concept a growth-equity recruit needs to
+     know, tied to an item above ("today's round is a good example of..."). Explain it from
+     zero with a concrete example, and say how it would come up in a coffee chat. Rotate through
+     topics and do not repeat one used in the last 15 briefings. Topic bank (pick one that fits
+     the day, or another if more relevant): how growth equity differs from VC and from buyouts;
+     why growth investors take minority stakes; ARR [annual recurring revenue] and why growth
+     deals are priced as a multiple of revenue; the Rule of 40; valuation step-ups vs down
+     rounds; liquidation preferences; primary vs secondary shares; secondaries and tender
+     offers; continuation funds; dry powder; how a fund works (LPs, GPs, management fee and
+     carry); IRR vs MOIC vs DPI; evergreen funds; what a deal team does day to day (sourcing,
+     diligence, the investment committee memo); IPO vs acquisition exits; unit economics (CAC,
+     LTV, payback, take rate); structured and preferred equity; why growth firms are going
+     public or selling stakes themselves.
+5. **CRYPTO & DIGITAL ASSETS** (5-7 items). Order: bank moves first (tokenized deposits,
    stablecoins, custody, crypto trading at Citi, JPMorgan, Goldman, Morgan Stanley, BofA); then
    the named companies (Ripple, Galaxy, Pantera, Coinbase, Robinhood, Securitize, Centrifuge,
    Plaid, Stripe, Hyperliquid, Circle, Kraken) and other fintech/crypto startups; then policy
@@ -112,14 +151,15 @@ Sections, in this order:
    what each company does in a few words the first time. Then END the section with:
      WHAT THIS MEANS: 2-3 simple sentences tying the items together (for example: banks and
      crypto firms are converging on stablecoins, and here is who is winning and why).
-5. **PRIVATE CREDIT** (1-2 items). Brief.
-6. **GROWTH EQUITY, VC & FINTECH FUNDING** (3-4 items). Insight Partners and General Atlantic
-   whenever they appear; big rounds and fund closes; say what the company does in plain words.
+6. **PRIVATE CREDIT** (1-2 items). Brief.
 7. **REACH OUT TODAY** (exactly three, one line each):
    `- <type of person: role + desk/team + firm> — <the news hook> — Ask: "<one natural question>"`
-   At least one in bank S&T; spread the others across crypto/digital assets and growth/VC.
-8. **LEARN ONE THING** (3-4 sentences). One concept from today's news explained from zero
-   with a concrete example. Do not repeat a concept from the last 10 briefings.
+   One in bank S&T, one in growth equity/VC, one in crypto/digital assets. Every hook must be
+   real news from the last ~3 days. Do not reuse the same firm and hook as the last two
+   briefings; if a firm has no fresh news, pick a different firm.
+8. **LEARN ONE THING** (3-4 sentences). One markets, trading or crypto concept from today's
+   news explained from zero with a concrete example. It must be a different topic from today's
+   GROWTH EQUITY 101. Do not repeat a concept from the last 10 briefings.
 9. **TAKE** (2-3 sentences, labelled opinion). Where one sector is heading and why.
 
 Do not pad. If a sector is quiet, write one line saying so and move on. Prefer items dated
